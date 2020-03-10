@@ -1,7 +1,10 @@
 *{
   margin: 0;
   padding: 0;
+  
+  
 }
+
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -12,6 +15,7 @@
   color: rgb(191, 68, 15);
   height: 15%;
   align-items: center;
+  border-bottom: 1px solid  rgb(191, 68, 15);
   
   
 }
@@ -28,15 +32,8 @@
   font-size: 12px;
   font-weight: 400;
 }
-.searchBar button{
-  width: 30%;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  background-color: black;
-  border: black;
-  border-radius: 5px;
-}
+
+
 .searchBar button:hover{
   background-color: rgb(191, 68, 15);
 }
@@ -44,10 +41,56 @@
   display: flex;
   margin-top: 30px;
   margin-left: 30px;
+  justify-content:space-around;
+  justify-content:center;
+  
+  
 }
-.movie img{
-height: 40%;
+#root{
+  background-color: rgb(14, 18, 18);
+
 }
-.add {
- 
+.movieImg{
+max-height: 70%;
+width : 40%;
+align-self: center;
+
+
+}
+.Star{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+  color: rgb(191, 68, 15);
+}
+.movie{
+  margin : 15px;
+  display:flex;
+  flex-direction : column;
+  width: 60%;
+}
+.movie h3{
+  font-size: 15px;
+  font-weight: 500;
+ color:  rgb(191, 68, 15);
+ text-align: center;
+ margin-top: 10px;
+}
+.movie h5{
+  color: rgb(191, 68, 15);
+  font-size: 15px;
+  text-align: center;
+}
+.add.btn.btn-primary.add{
+  background-color:rgb(191, 68, 15) ;
+}
+.movieImg:hover{
+  transform: scale(1.1); 
+
+}
+.add.btn.btn-primary.add:hover{
+  transform: scale(1.1); 
+}
+.Star:hover{
+  transform: scale(1.5); 
 }

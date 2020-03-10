@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
+var FontAwesome = require('react-fontawesome')
 
 class Search extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
     }
+    
+    
+    
     render() {
         return (
             <div className='navbar'>
                 <h1>Movies</h1>
                 <div className='searchBar'>
-                    <input placeholder='Type movie name to search' />
-                    <button>Search</button>
-                </div>
-                <h4>Rating</h4>
-            </div>
+                    <input onChange={(e)=>this.props.filtred(e.target.value)} placeholder='Type movie name to search' />
+                   
+                    </div>
+          
+                    </div>
         )
     }
 }
